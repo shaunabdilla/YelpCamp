@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+
+	<div class="row">
+		<div class="col-md-12">
+			<form class="form-signin" action="/register" method="POST">
+				  <img class="mb-4" src="https://cdn.onlinewebfonts.com/svg/img_557028.png" alt="" width="72" height="72">
+				  <h1 class="h3 mb-3 font-weight-normal">Sign Up to YelpCamp</h1>
+				  <label for="inputUsername" class="sr-only">Username</label>
+				  <input type="text" id="inputEmail" class="form-control" placeholder="Username" name="username" required autofocus>
+				  <label for="inputPassword" class="sr-only">Password</label>
+				  <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+				  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+			</form>
+			<div class="form-signin">
+				<a href="/campgrounds">Go Back</a>
+			</div>
+		</div>
+	</div>
+
+<% include ./partials/footer %>

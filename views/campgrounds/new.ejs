@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-md-12 text-center">
+			<h1> Create a New Campground</h1>
+		</div>
+		<div class="col-md-10">
+			<form action="/campgrounds" method="post">
+				<div class = "form-group">
+					<label for="">Name</label>
+					<input class="form-control" type ="text" name= "name" placeholder="Ghajn Tuffieha Camp">
+				</div>
+				<div class = "form-group">
+					<label for="">Price</label>
+					<input class="form-control" type ="number" name= "price" placeholder="25.50" min="0.01" step="0.01">
+					<small id="priceHelp" class="form-text text-muted">I wouldn't go too overboard.</small>
+				</div>
+				<div class = "form-group">
+					<label for="">Image URL</label>
+					<input class="form-control" type = "text" name= "image" placeholder="http://unsplash.com/...">
+				</div>			
+				<div class = "form-group">
+					<label for="">Description</label>
+					<input class="form-control" type = "text" name= "description" placeholder="One of the most picturesque...">
+				</div>
+				<div class="form-group">
+					<label for="location">Location</label>
+					<input class="form-control" type="text" name="location" id="location" placeholder="Ghajn Tuffieha Campsite, Ghajn Tuffieha">
+				</div>
+				<div class = "form-group">
+					<button class="btn btn-lg btn-primary btn-block">Submit! </button>
+				</div>
+			</form>
+			<a href="/campgrounds">Go back</a>
+		</div>
+	</div>
+</div>
+
+<% include ../partials/footer %>
